@@ -104,7 +104,7 @@
                 move_uploaded_file($source,$destination);  // deplacer le ficher temporaire vers la destination
                 $data['photo']=$name;
             }else{
-                unset($data['name']); // supprimer l'element à l'indice 'name' dans $data           }
+                unset($data['photo']); // supprimer l'element à l'indice 'name' dans $data           }
              }
              $um=new UserManager();
              $connexion=$um->connexion();
@@ -265,11 +265,5 @@
             $this->generatePage($file,$variables);
 
         }                
-
-
-
-
-
-
 
     }

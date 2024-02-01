@@ -12,7 +12,7 @@ function popupCenter(url, title, w, h) {
 }
 
 function getIdChecked(name_element){
-    let checkboxes=document.getElementsByName(name_element);
+ let checkboxes=document.getElementsByName(name_element);
       let id=0;
     checkboxes.forEach((item)=>{
         if(item.checked==true) {
