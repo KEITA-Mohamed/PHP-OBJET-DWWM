@@ -22,6 +22,7 @@
             <div class="collapse navbar-collapse justify-content-between" id="nav">
                 <ul class="navbar-nav px-2">
                     <li class="nav-item"><a href="accueil" class="nav-link text-light fw-bold">Accueil</a></li>
+                    <?php use App\Service\MyFct; ?>
                     <?php  if(MyFct::isGranted('ROLE_DEPOT')): ?>
                         <li class="nav-item"><a href="article" class="nav-link text-light fw-bold">Article</a></li>
                         <li class="nav-item"><a href="article-ajax.php" class="nav-link text-light fw-bold">Article-Ajax</a>
