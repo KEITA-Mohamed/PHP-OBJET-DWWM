@@ -25,7 +25,6 @@
                     <?php use App\Service\MyFct; ?>
                     <?php  if(MyFct::isGranted('ROLE_DEPOT')): ?>
                         <li class="nav-item"><a href="article" class="nav-link text-light fw-bold">Article</a></li>
-                        <li class="nav-item"><a href="article-ajax.php" class="nav-link text-light fw-bold">Article-Ajax</a>
                         </li>
                         <li class="nav-item"><a href="client" class="nav-link text-light fw-bold">Client</a></li>
                     <?php endif; ?>
